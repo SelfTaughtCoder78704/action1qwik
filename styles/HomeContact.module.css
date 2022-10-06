@@ -31,3 +31,13 @@
   gap: 144px;
   margin: 70px 0;
 }
+
+@media only screen and (max-width: 768px) {
+  .homeContact h2 {
+    font-size: 20px;
+  }
+
+  .group {
+    margin: 20px 0;
+  }
+}

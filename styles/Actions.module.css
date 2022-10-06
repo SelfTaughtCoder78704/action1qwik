@@ -38,3 +38,22 @@
   padding: 10px 20px;
   align-items: center;
 }
+.action img,
+.action {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .actionsContent {
+    flex-direction: column;
+    max-width: initial;
+    width: 100%;
+    margin-top: 35px;
+  }
+
+
+  .actions h2 {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+}

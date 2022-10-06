@@ -71,3 +71,25 @@
   text-align: center;
   line-height: 1;
 }
+
+@media only screen and (max-width: 768px) {
+  /* .detailsContent {
+    flex-direction: column;
+  } */
+
+  .details h2 {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  .detail h3 {
+    font-size: 20px;
+  }
+
+  .detailsContent img {
+    width: 60px;
+  }
+
+  .detailsContent .detail:nth-child(2) img {
+    width: 100px;
+  }
+}

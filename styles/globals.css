@@ -124,3 +124,13 @@ button {
     background: black;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .strip-text {
+    font-size: 30px;
+  }
+
+  .mb-85 {
+    margin-bottom: 40px;
+  }
+}
