@@ -7,7 +7,7 @@ export default function ContactForm(props) {
     <form className={styles.form} name="contact" method="POST" action={url}>
       <input type="hidden" name="form-name" value="contact" />
       <p hidden>
-        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+        <label>Don&apos;t fill this out if you&apos;re human: <input name="bot-field" /></label>
       </p>
       <div className={styles.formInputContainer}>
         <input type='text' name='name' placeholder='Name' id='name' className={styles.formControl} />
