@@ -1,0 +1,43 @@
+.hero {
+  background: url("/heroBg.png") no-repeat center center/cover;
+  height: calc(100vh - 100px);
+  background-attachment: fixed;
+
+  color: var(--siteWhite);
+}
+
+.heroContent {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.43);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heroContent h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.heroContent h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 21px;
+}
+
+.heroContent p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 29px;
+}

@@ -1,0 +1,4 @@
+.strip {
+  background: var(--primaryBgGradient);
+  padding: 54px;
+}

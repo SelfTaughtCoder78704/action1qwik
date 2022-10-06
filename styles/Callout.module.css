@@ -1,0 +1,43 @@
+.callout {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.calloutContent {
+  background-color: var(--primaryBg);
+  color: var(--siteWhite);
+  padding: 135px 115px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.calloutImage {
+  width: 50%;
+}
+
+.calloutImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.calloutContent h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.calloutContent p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 31px;
+  line-height: 36px;
+  text-align: center;
+  line-height: 1;
+  margin-top: 69px;
+  margin-bottom: 39px;
+}

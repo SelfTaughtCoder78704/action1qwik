@@ -1,0 +1,33 @@
+.homeContact {
+  background-color: var(--primaryBg);
+  color: var(--siteWhite);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 85px 0;
+}
+
+.homeContact h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.homeContact a {
+  text-decoration: underline;
+  display: block;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 1rem;
+  gap: 144px;
+  margin: 70px 0;
+}

@@ -1,0 +1,30 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 592px;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.formInputContainer {
+  width: 100%;
+}
+
+.formInputContainer input,
+.formInputContainer textarea {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--siteWhite);
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border: none;
+}
+
+.form button {
+  width: 100%;
+}

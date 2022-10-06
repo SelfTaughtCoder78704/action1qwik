@@ -1,0 +1,40 @@
+.actions {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.actions h2 {
+  margin-top: 85px;
+  margin-bottom: 75px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.actionsContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  max-width: 1082px;
+  margin: 0 auto;
+  background: var(--primaryBgGradient);
+}
+
+.horizRule {
+  width: 10%;
+  height: 3px;
+  background-color: var(--primaryBg);
+  margin: 20px auto;
+}
+
+.actionGroup {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
