@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../styles/Actions.module.css'
 
 export default function Actions(props) {
@@ -12,7 +13,12 @@ export default function Actions(props) {
         {actions && actions.map((action, index) => (
           <Link key={index} href={action.link}>
             <a key={index} className={styles.action}>
-              <img src={action.image} alt={action.alt} />
+              <Image
+                src={action.image}
+                alt={action.alt}
+                width={360}
+                height={192}
+              />
               <div className={styles.actionGroup}>
                 <h3>{action.title}</h3>
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">

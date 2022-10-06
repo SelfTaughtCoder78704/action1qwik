@@ -1,6 +1,7 @@
 import React from 'react'
 import GoogleMap from './GoogleMap'
 import styles from '../styles/Footer.module.css'
+import Image from 'next/image'
 export default function Footer(props) {
   const { logo, address, hours } = props
   return (
@@ -8,7 +9,7 @@ export default function Footer(props) {
       <div className={styles.container}>
         <div className={styles.footerRow}>
           <div className={styles.footerSection}>
-            <img src={logo} alt="logo" />
+            <Image src={logo} alt="logo" width={200} height={42} />
           </div>
           <div className={styles.footerSection}>
             <h3>Address</h3>

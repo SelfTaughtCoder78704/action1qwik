@@ -10,7 +10,10 @@ export default function Details(props) {
       <div className={styles.detailsContent}>
         {details && details.map((detail, index) => (
           <div key={index} className={styles.detail}>
-            <img src={detail.image} alt={detail.alt} />
+            <picture>
+              <source srcSet={detail.image} type="image/png" />
+              <img src={detail.image} alt={detail.title} />
+            </picture>
             <h3>{detail.title}</h3>
             <div className={styles.horizRule}></div>
             <p>{detail.text}</p>

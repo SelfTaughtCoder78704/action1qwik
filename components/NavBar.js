@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../styles/NavBar.module.css'
 
 export default function NavBar(props) {
@@ -33,7 +34,7 @@ export default function NavBar(props) {
         <div className={styles.logo}>
           {logo &&
             <Link href="/">
-              <img src={logo} alt="logo" />
+              <Image src={logo} alt="logo" width={150} height={31.5} />
             </Link>
           }
           {tagLine && <h1>{tagLine}</h1>}

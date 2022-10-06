@@ -13,7 +13,10 @@ export default function Callout(props) {
         {children}
       </div>
       <div className={styles.calloutImage}>
-        <img src={image} alt={title} />
+        <picture>
+          <source srcSet={image} type="image/jpg" />
+          <img src={image} alt={title} />
+        </picture>
       </div>
     </div>
   )
