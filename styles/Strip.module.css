@@ -3,9 +3,14 @@
   padding: 54px;
 }
 
-
 @media only screen and (max-width: 768px) {
   .strip-text {
     font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .strip-text {
+    font-size: 20px;
   }
 }

@@ -65,3 +65,17 @@
     width: 100%;
   } */
 }
+
+@media only screen and (max-width: 480px) {
+  .callout {
+    flex-direction: column;
+  }
+
+  .calloutContent {
+    width: 100%;
+  }
+
+  .calloutImage {
+    width: 100%;
+  }
+}
