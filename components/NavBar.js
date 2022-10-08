@@ -7,6 +7,7 @@ export default function NavBar(props) {
   const mobileMenu = useRef(null)
   const toggleMobileMenu = () => {
     mobileMenu.current.classList.toggle(styles.active)
+
   }
 
   useEffect(() => {
@@ -24,6 +25,11 @@ export default function NavBar(props) {
     closeMenu()
   }, [])
 
+  const handleMenu = (e) => {
+
+    toggleMobileMenu()
+
+  }
 
 
 
@@ -33,10 +39,10 @@ export default function NavBar(props) {
         <div className={styles.logo}>
           {logo &&
             <Link href="/">
-             <picture>
-              <source srcSet={logo} type="image/png" />
-              <img src={logo} alt="logo" />
-            </picture>
+              <picture>
+                <source srcSet={logo} type="image/png" />
+                <img src={logo} alt="logo" />
+              </picture>
             </Link>
           }
           {tagLine && <h1>{tagLine}</h1>}
@@ -44,7 +50,7 @@ export default function NavBar(props) {
         <ul className={styles.navLinks}>
           {links && links.map((link, index) => (
             <li key={index}>
-              <Link href={link.url}><a className={link.classes ? link.classes : 'link'} >{link.text}</a></Link>
+              <Link href={link.url}><a className={link.classes ? link.classes : 'link'} onClick={handleMenu}>{link.text}</a></Link>
             </li>
           ))}
         </ul>
@@ -57,7 +63,7 @@ export default function NavBar(props) {
         <ul className={styles.mobileLinks}>
           {links && links.map((link, index) => (
             <li key={index}>
-              <Link href={link.url}><a className={link.classes ? link.classes : 'link'} >{link.text}</a></Link>
+              <Link href={link.url}><a className={link.classes ? link.classes : 'link'} onClick={handleMenu}>{link.text}</a></Link>
             </li>
           ))}
         </ul>

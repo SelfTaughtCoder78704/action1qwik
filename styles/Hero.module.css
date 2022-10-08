@@ -2,7 +2,6 @@
   background: url("/heroBg.png") no-repeat center center/cover;
   height: calc(100vh - 100px);
   background-attachment: fixed;
-
   color: var(--siteWhite);
 }
 

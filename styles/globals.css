@@ -5,6 +5,11 @@
   --primaryBgGradient: linear-gradient(90deg, #efefef 0%, #fcfaf6 100%);
 }
 
+* {
+  box-sizing: border-box;
+}
+
+
 html,
 body {
   padding: 0;
@@ -104,9 +109,6 @@ button {
   display: block;
 }
 
-* {
-  box-sizing: border-box;
-}
 
 .horizRule {
   width: 30%;

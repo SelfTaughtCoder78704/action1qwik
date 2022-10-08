@@ -73,9 +73,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  /* .detailsContent {
-    flex-direction: column;
-  } */
 
   .details h2 {
     font-size: 20px;

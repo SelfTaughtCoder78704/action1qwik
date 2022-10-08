@@ -1,0 +1,54 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 80px 64px;
+}
+
+.about p {
+  max-width: 630px;
+}
+
+.horizRule {
+  width: 30%;
+  height: 3px;
+  background-color: var(--primaryBg);
+  margin: 20px auto;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 1rem;
+  gap: 144px;
+  margin: 70px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    padding: 40px 32px;
+  }
+  .group {
+    display: block;
+    margin: 20px 0;
+  }
+
+  .group > div {
+    margin: 20px 0;
+  }
+
+  .about h1 {
+    font-size: 20px;
+  }
+
+  .group h2 {
+    font-size: 20px;
+  }
+}
