@@ -27,7 +27,7 @@ export default function NavBar(props) {
 
   const handleMenu = (e) => {
 
-    toggleMobileMenu()
+    mobileMenu.current.classList.remove(styles.active)
 
   }
 
